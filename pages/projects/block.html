@@ -1,0 +1,115 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 웹사이트</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/project-detail.css">
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html" >HOME</a></li>
+            <li><a href="../skill.html" >SKILL</a></li>
+            <li><a href="../projects.html" >PROJECT</a></li>
+            <li><a href="../about.html" >ABOUT</a></li>
+            <li><a href="../contact.html" >CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <!-- 소개 섹션 -->
+        <article class="intro">
+            <img src="../../assets/block/logo.png" alt="Block">
+            <hr>
+            <h1>Block : 대외 활동 관리 서비스</h1>
+            <p>
+                <b style="font-style: italic;">" UMC 6th Master 코스 프로젝트로 대학생의 대외 활동 관리 서비스 "</b><br><br>
+                <table>
+                    <tr><td><b>대외 활동 관리 서비스</b></td><td> : </td><td>사용자가 지원 가능한 공모전 및 대외 활동 소식을 전해줘요</td></tr>
+                    <tr><td><b>팀 매칭 서비스</b></td><td> : </td><td>직접 원하는 사람에게 하트를 날려요</td></tr>
+                    <tr><td><b>후기 서비스</b></td><td> : </td><td>활동 참여자들의 후기를 볼 수 있어요</td></tr>
+                </table>
+            </p>
+            <div class="gallery-ppt">
+                <img src="../../assets/block/info_team.png" alt="팀 매칭">
+                
+                <img src="../../assets/block/info_review_pay.png" alt="리뷰결제">
+                <img src="../../assets/block/info_review_detail.png" alt="상세 리뷰">
+                <img src="../../assets/block/mypage_point_2_1.png" alt="포인트 내역">
+                
+                <p><small style="color: #888b8e;">피그마 이미지</small></p>
+            </div>
+        </article>
+        <hr class="divide">
+
+        <!-- 사용 기술 섹션 -->
+        <article class="tech">
+            <h2>사용 기술</h2>
+            <table>
+                <tr><td>&#128391;</td><td>Spring</td></tr>
+                <tr><td>&#128391;</td><td>JPA</td></tr>
+                <tr><td>&#128391;</td><td>MySQL</td></tr>
+                <tr><td>&#128391;</td><td>AWS</td></tr>
+                <tr><td>&#128391;</td><td>IntelliJ</td></tr>
+            </table>
+            <div class="gallery-tech">
+                <img src="../../assets/logo/spring.png" alt="c++">
+                <img src="../../assets/logo/jpa.png" alt="visual">
+                <img src="../../assets/logo/mysql.png" alt="sdl">
+                <img src="../../assets/logo/aws.png" alt="sdl">
+                <img src="../../assets/logo/github.png" alt="git">
+                <img src="../../assets/logo/intellij.png" alt="git">
+            </div>
+        </article>
+        <hr class="divide">
+
+        <!-- 담당 기능 섹션 -->
+        <article class="part">
+            <h2>담당한 기능</h2>
+            <p class="tag">BE : API 구현 및 서버 관리</p>
+
+            <h4>공모전 후기 구매</h4>
+            <ul>
+                <li>(상품 금액 - 사용할 포인트)의 차액을 <b>카카오페이</b>로 결제</li>
+                <li>카카오페이 API 연동</li>
+                <li>이미 결제했던 리뷰인 경우 예외 처리</li>
+                <li>결제 시 포인트 차감 및 리뷰에 추가</li>
+                <li>포인트 사용 내역 업데이트</li>
+                <li>포인트 부족 시 예외 처리</li>
+            </ul>
+
+            <h4>공모전 상세 후기 출력</h4>
+            <ul>
+                <li>결제하지 않은 경우: <b>PAY400</b></li>
+                <li>리뷰가 contest에 속하지 않을 경우: <b>REVIEW404</b></li>
+                <li>본인이 작성한 후기일 경우 정상 출력</li>
+            </ul>
+
+            <h4>기타 기능</h4>
+            <ul>
+                <li>잔여 포인트 출력</li>
+                <li>최근 5개 포인트 상세 내역 출력</li>
+                <li>프로필 이미지 등록 및 삭제</li>
+                <ul>
+                    <li>파일 선택 안 함 → 기존 프로필 사진 삭제</li>
+                    <li>파일 선택 → 새로운 프로필 등록</li>
+                </ul>
+                <li>임시 서버 배포 및 관리</li>
+                <ul>
+                    <li>VPC, EC2, RDS, S3 사용</li>
+                </ul>
+            </ul>
+        </article>
+
+        <a href="https://github.com/Block-umc/back" target="_blank" class="github-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle;"> 
+            <span>깃허브 바로가기</span>
+        </a>
+    </section>
+    
+    <footer>
+        <span>LGY010011</span>
+        <span>© 2024 Portfolio</span>
+    </footer>
+</body>

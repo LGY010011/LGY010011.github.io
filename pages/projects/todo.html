@@ -1,0 +1,91 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 웹사이트</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/project-detail.css">
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html" >HOME</a></li>
+            <li><a href="../skill.html" >SKILL</a></li>
+            <li><a href="../projects.html" >PROJECT</a></li>
+            <li><a href="../about.html" >ABOUT</a></li>
+            <li><a href="../contact.html" >CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <!-- 소개 섹션 -->
+        <article class="intro">
+            <img src="../../assets/todo/main.png" alt="Block">
+            <hr>
+            <h1>Todo List</h1>
+            <p>
+                <b style="font-style: italic;">" UMC에서 진행한 투두리스트 서비스 개발 "</b><br><br>
+                <table>
+                    <tr><td><b>투두 작성</b></td><td> : </td><td>새로운 투두를 등록하자</td></tr>
+                    <tr><td><b>투두 수정</b></td><td> : </td><td>진행 상황에 맞춰 수정하자</td></tr>
+                    <tr><td><b>투두 체크</b></td><td> : </td><td>할 일을 완수했다면 체크하자</td></tr>
+                </table>
+            </p>
+            <div class="gallery-ppt">
+                <video src="../../assets/todo/play.mp4" autoplay muted loop></video>
+                <p><small style="color: #888b8e;">서비스 영상</small></p>
+                <video src="../../assets/todo/play-error.mp4" autoplay muted loop></video>
+                <p><small style="color: #888b8e;">로딩 및 에러 처리</small></p>
+            </div>
+        </article>
+        <hr class="divide">
+
+        <!-- 사용 기술 섹션 -->
+        <article class="tech">
+            <h2>사용 기술</h2>
+            <table>
+                <tr><td>&#128391;</td><td>React</td></tr>
+                <tr><td>&#128391;</td><td>style-component</td></tr>
+                <tr><td>&#128391;</td><td>html</td></tr>
+                <tr><td>&#128391;</td><td>css</td></tr>
+                <tr><td>&#128391;</td><td>js</td></tr>
+            </table>
+            <div class="gallery-tech">
+                <img src="../../assets/logo/react.png" alt="c++">
+                <img src="../../assets/logo/htmlcssjs.png" alt="visual">
+                <img src="../../assets/logo/style-component.png" alt="sdl">
+                <img src="../../assets/logo/react-query.png" alt="sdl">
+            </div>
+        </article>
+        <hr class="divide">
+
+        <!-- 담당 기능 섹션 -->
+        <article class="part">
+            <h2>담당한 기능</h2>
+            <p class="tag">FE</p>
+
+            <h4>투두리스트 목록 조회</h4>
+            <ul>
+                <li>GET 요청은 <b>useQuery</b>를 사용하여 처리</li>
+            </ul>
+            <h4>투두 생성, 수정, 삭제</h4>
+            <ul>
+                <li>POST, PUT, DELETE와 같이 기존의 상태를 변화시키는 요청은
+                    <b>useMutation</b>을 사용하여 처리
+                </li>
+                <li>투두는 거의 모든 곳에서 사용되므로 불필요한 props 전달을 막고자 <b>context</b>를 사용</li>
+            </ul>
+
+        </article>
+
+        <a href="https://github.com/LGY010011/Web/tree/%EB%82%98%EB%82%98/%EC%9D%B4%EA%B0%80%EC%98%81" target="_blank" class="github-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle;"> 
+            <span>깃허브 바로가기</span>
+        </a>
+    </section>
+    
+    <footer>
+        <span>LGY010011</span>
+        <span>© 2024 Portfolio</span>
+    </footer>
+</body>

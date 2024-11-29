@@ -1,0 +1,114 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 웹사이트</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/project-detail.css">
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html" >HOME</a></li>
+            <li><a href="../skill.html">SKILL</a></li>
+            <li><a href="../projects.html" >PROJECT</a></li>
+            <li><a href="../about.html" >ABOUT</a></li>
+            <li><a href="../contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <!-- 소개 섹션 -->
+        <article class="intro">
+            <img src="../../assets/dongle/background2.png" alt="Block">
+            <hr>
+            <h1>동글동글 : 우리만의 동아리글, 동글동글!</h1>
+            <p>
+                <b style="font-style: italic;">" GGUM 해커톤에서 제작한 인증된 동아리글 모아보기 서비스 "</b><br><br>
+                <table>
+                    <tr><td><b>동아리 인증</b></td><td> : </td><td>검증된 동아리들만의 커뮤니티</td></tr>
+                    <tr><td><b>동글동글</b></td><td> : </td><td>동아리들의 정보글만 볼 수 있는 커뮤니티 공간</td></tr>
+                    <tr><td><b>재잘재잘</b></td><td> : </td><td>동아리원들, 예비동아리원들이 모여 사담을 할 수 있는 커뮤니티 공간</td></tr>
+                </table>
+            </p>
+            <div class="gallery-ppt">
+                <img src="../../assets/dongle/background.png" alt="메인">
+                <img src="../../assets/dongle/mypage_1.png" alt="일반 계정">
+                <img src="../../assets/dongle/mypage_2.png" alt="운영진 계정">
+                <img src="../../assets/dongle/재잘재잘.png" alt="재잘재잘">
+                <img src="../../assets/dongle/동글동글.png" alt="동글동글">
+                <p><small style="color: #888b8e;">샘플 이미지</small></p>
+            </div>
+        </article>
+        <hr class="divide">
+
+        <!-- 사용 기술 섹션 -->
+        <article class="tech">
+            <h2>사용 기술</h2>
+            <table>
+                <tr><td>&#128391;</td><td>Spring</td></tr>
+                <tr><td>&#128391;</td><td>JPA</td></tr>
+                <tr><td>&#128391;</td><td>MySQL</td></tr>
+                <tr><td>&#128391;</td><td>AWS</td></tr>
+                <tr><td>&#128391;</td><td>IntelliJ</td></tr>
+            </table>
+            <div class="gallery-tech">
+                <img src="../../assets/logo/spring.png" alt="c++">
+                <img src="../../assets/logo/jpa.png" alt="visual">
+                <img src="../../assets/logo/mysql.png" alt="sdl">
+                <img src="../../assets/logo/aws.png" alt="sdl">
+                <img src="../../assets/logo/github.png" alt="git">
+                <img src="../../assets/logo/intellij.png" alt="git">
+            </div>
+        </article>
+        <hr class="divide">
+
+        <!-- 담당 기능 섹션 -->
+        <article class="part">
+            <h2>담당한 기능</h2>
+            <p class="tag">BE : 마이페이지 API 구현</p>
+
+            <h4>마이페이지 정보 조회</h4>
+            <ul>
+                <li>마이페이지에 필요한 정보 반환</li>
+                <ul>
+                    <li>닉네임</li>
+                    <li>이메일</li>
+                    <li>자신이 가입한 동아리</li>
+                    <li>운영진일 경우 자신이 관리 중인 동아리</li>
+                    <li>전체 동아리 목록</li>
+                </ul>
+            </ul>
+            <h4>동아리 관리자 계정 인증</h4>
+            <ul>
+                <li>각 동아리는 <b>하나의 관리자 이메일</b></li>
+                <li>자신의 이메일과 동아리명을 담아 요청을 보내면, 
+                    <ul>
+                        <li>서버의 데이터와 일치할 경우 관리자 계정으로 인증</li>
+                        <li>일치하지 않은 경우 <b>NOT_MANAGER</b> 반환</li>
+                    </ul> 
+                </li>
+            </ul>
+
+            <h4>동아리 인증 요청 및 승인</h4>
+            <ul>
+                <li>동아리 이름과 자신의 이메일, 학번을 담아 요청</li>
+                <li>관리자 계정일 경우, 동아리 승인 요청 리스트를 확인 가능</li>
+                <li>승인 혹은 거절 처리 가능</li>
+                <li>거절 당할 경우, db에서 삭제되어 <b>재요청</b>이 가능하도록 처리</li>
+                
+            </ul>
+
+        </article>
+
+        <a href="https://github.com/devkeon/dong-geul-be" target="_blank" class="github-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle;"> 
+            <span>깃허브 바로가기</span>
+        </a>
+    </section>
+    
+    <footer>
+        <span>LGY010011</span>
+        <span>© 2024 Portfolio</span>
+    </footer>
+</body>

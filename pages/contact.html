@@ -1,0 +1,76 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 웹사이트</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="skill.html" >SKILL</a></li>
+            <li><a href="projects.html" >PROJECT</a></li>
+            <li><a href="about.html" >ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section>
+        
+        <h1 style="font-size: 2em; margin-bottom: 0px;">Contact Me</h1>
+        저에게 연락하고 싶으시면 아래 양식을 사용하거나 아래의 방법으로 연락하실 수 있습니다
+        <article class="contact-me">
+            <h3>메시지 남기기</h3>
+            <form class="contact-form">
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">이메일:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">메시지:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">보내기</button>
+            </form>
+
+            
+        </article>
+        <article class="contact-info">
+            <h3>연락처 정보</h3>
+            <table class="lists">
+                <tr><td><b>Email</b></td><td>:</td><td>gylm1111pm@email.com</td></tr>
+                <tr><td><b>Phone</b></td><td>:</td><td>000-1111-2222</td></tr>
+            </table>
+        </article>
+        
+        <!-- 소셜 미디어 링크 -->
+        <article class="social-media">
+            <h3>Follow Me</h3>
+            <div class="follow">
+                <a href="https://velog.io/@lgy010011/posts" target="_blank"><span>Velog</span></a>
+                <a href="https://github.com/LGY010011m" target="_blank"><span>GitHub</span></a>
+            </div>
+        </article>
+
+        <!-- 위치 (선택 사항) -->
+        <article class="location">
+            <h3>Location</h3>
+            <p>서울특별시, 대한민국</p>
+            <!-- 구글 지도 링크 -->
+            <a href="https://www.google.com/maps" target="_blank">구글 지도에서 보기</a>
+        </article>
+
+    </section>
+
+
+    
+    <footer>
+        <span>LGY010011</span>
+        <span>© 2024 Portfolio</span>
+    </footer>
+</body>

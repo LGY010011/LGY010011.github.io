@@ -1,0 +1,96 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 웹사이트</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/project-detail.css">
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">HOME</a></li>
+            <li><a href="../skill.html">SKILL</a></li>
+            <li><a href="../projects.html" >PROJECT</a></li>
+            <li><a href="../about.html" >ABOUT</a></li>
+            <li><a href="../contact.html" >CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <!-- 소개 섹션 -->
+        <article class="intro">
+            <img src="../../assets/movie/main.png" alt="Block">
+            <hr>
+            <h1>YOUNGCHA</h1>
+            <p>
+                <b style="font-style: italic;">" UMC에서 진행한 영화 웹서비스 개발 "</b><br><br>
+                <table>
+                    <tr><td><b>개봉 영화 조회</b></td><td> : </td><td>현재 개봉 중인 영화 조회</td></tr>
+                    <tr><td><b>영화 검색</b></td><td> : </td><td>내가 찾는 영화가 있는지 검색해보자</td></tr>
+                    <tr><td><b>리뷰 조회</b></td><td> : </td><td>영화의 후기를 알고싶다</td></tr>
+                </table>
+            </p>
+            <div class="gallery-ppt">
+                <video src="../../assets/movie/play.mp4" autoplay muted loop></video>
+                <p><small style="color: #888b8e;">서비스 영상</small></p>
+                <video src="../../assets/movie/play-login.mp4" autoplay muted loop></video>
+                <p><small style="color: #888b8e;">로그인-회원가입 영상</small></p>
+            </div>
+        </article>
+        <hr class="divide">
+
+        <!-- 사용 기술 섹션 -->
+        <article class="tech">
+            <h2>사용 기술</h2>
+            <table>
+                <tr><td>&#128391;</td><td>React</td></tr>
+                <tr><td>&#128391;</td><td>style-component</td></tr>
+                <tr><td>&#128391;</td><td>html</td></tr>
+                <tr><td>&#128391;</td><td>css</td></tr>
+                <tr><td>&#128391;</td><td>js</td></tr>
+            </table>
+            <div class="gallery-tech">
+                <img src="../../assets/logo/react.png" alt="c++">
+                <img src="../../assets/logo/htmlcssjs.png" alt="visual">
+                <img src="../../assets/logo/style-component.png" alt="sdl">
+                <img src="../../assets/logo/react-query.png" alt="sdl">
+            </div>
+        </article>
+        <hr class="divide">
+
+        <!-- 담당 기능 섹션 -->
+        <article class="part">
+            <h2>담당한 기능</h2>
+            <p class="tag">FE</p>
+
+            <h4>TMDB API 연결과 로그인-회원가입 API 연결</h4>
+            <ul>
+                <li><b>custom-hook</b>을 통한 API 연결</li>
+                <li>서로 다른 엔드포인트이므로 axios-instance를 분리하여 사용</li>
+            </ul>
+            <h4>로그인-회원가입</h4>
+            <ul>
+                <li><b>useForm</b>과 <b>패턴 정규식</b>을 사용하여 유효성 검사</li>
+                <li>전역에서 필요로 하는 AccessToken과 같은 정보를 <b>Context</b>를 통해 관리</li>
+                <li><b>로컬 스토리지</b>에 데이터를 저장</li>
+                
+            </ul>
+            <h4>검색 기능</h4>
+            <ul>
+                <li>서버로 요청을 날리는 과정에 <b>debounce</b>를 적용하여 불필요하게 많은 요청을 방지</li>
+            </ul>
+
+        </article>
+
+        <a href="https://github.com/LGY010011/Web/tree/%EB%82%98%EB%82%98/%EC%9D%B4%EA%B0%80%EC%98%81" target="_blank" class="github-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle;"> 
+            <span>깃허브 바로가기</span>
+        </a>
+    </section>
+    
+    <footer>
+        <span>LGY010011</span>
+        <span>© 2024 Portfolio</span>
+    </footer>
+</body>

@@ -1,0 +1,122 @@
+section{
+    margin: 100px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section>article{
+    width: 60%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding:20px;
+}
+
+.profile-container {
+    margin-top:40px;
+    display: flex;
+    align-items: center; /* 세로로 가운데 정렬 */
+    justify-items: space-around;
+    gap: 20px; /* 사진과 텍스트 간 간격 */
+}
+
+.profile-image{
+    width: 30%;
+}
+
+.profile-image>img{
+    display: flex;
+    justify-self: flex-start;
+    width: 200px;
+    height: auto; /* 이미지 비율을 유지하면서 높이를 자동으로 설정 */
+    border-radius: 100px;
+}
+
+.bio {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top:40px;
+}
+
+
+.impact{
+    width: 70%;
+    font-size:18px;
+    font-style: italic; 
+    font-weight:bold;
+    margin-right: 50px;
+    text-align: center;
+    opacity: 0; /* 처음에는 투명 */
+    animation: fadeInText 2s ease-in-out forwards; /* 텍스트 애니메이션 */
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0; /* 투명 */
+        transform: translateY(20px); /* 살짝 아래에서 시작 */
+    }
+    100% {
+        opacity: 1; /* 완전히 보이게 */
+        transform: translateY(0); /* 원래 위치로 */
+    }
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin-bottom: 15px;
+    font-size: 15px;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 15px; /* 내용 간격 */
+}
+
+.timeline li:hover {
+    transform: scale(1.03);
+    background-color:#f8f1dfaf;
+}
+
+
+.timeline strong {
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+.tips {
+    list-style: none; 
+    padding: 0;
+    margin: 20px 0;
+}
+
+.tips li {
+    border-radius: 8px;
+    padding: 15px; /* 내용 간격 */
+    margin-bottom: 10px; /* 항목 간 간격 */
+    font-size: 1.1rem; 
+    color: #333; 
+    display: flex; 
+    align-items: center; 
+    
+}
+
+.tips li::before {
+    content: "💡"; 
+    font-size: 1.4rem; 
+    margin-right: 10px; 
+    flex-shrink: 0; 
+}
+
+li.check {
+    
+    background-color: #f8f1dfaf; 
+    font-weight: bold;
+    color: #795548; 
+}

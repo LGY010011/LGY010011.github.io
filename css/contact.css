@@ -1,0 +1,97 @@
+section{
+    margin: 100px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section>article{
+    width: 50%;
+}
+
+.lists{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.lists b, a{
+    color: #005c8a;
+}
+
+.follow{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-size: 15px;
+    width:30%;
+}
+
+
+.follow a:hover{
+    color: #677177;
+    transform: scale(1.03); /* 가로로만 확대 */
+    
+}
+
+
+.lists td {
+    padding: 10px; /* 각 셀 안에 간격 추가 */
+    padding-left: 0px;
+    padding-top: 0px;
+    /*border: 1px solid black; /* 테두리 추가 */
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    /*커서 활성화*/
+    caret-color:#005c8a;
+    gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.contact-form input{
+    width: 40%;
+}
+.contact-form textarea, .contact-form textarea{
+    width: 100%;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #8492ae;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #aab2d3;
+}
+
+.contact-info, .social-media, .location{
+    padding: 30px;;
+    border-radius: 10px;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-media a{
+    text-decoration: none;
+}

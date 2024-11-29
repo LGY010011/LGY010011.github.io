@@ -1,0 +1,115 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 웹사이트</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/project-detail.css">
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html" >HOME</a></li>
+            <li><a href="../skill.html" >SKILL</a></li>
+            <li><a href="../projects.html" >PROJECT</a></li>
+            <li><a href="../about.html" >ABOUT</a></li>
+            <li><a href="../contact.html" >CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <article class="intro">
+            <video src="../../assets/folktale/folktale.mp4" autoplay muted controls></video>
+            <hr>
+            <h1>folktale</h1>
+            <p>
+                <b style="font-style: italic;">" 게임 프로그래밍 수업에서 진행된 팀 프로젝트로 미니 게임 3개로 구성된 .exe 플래시 게임 "</b><br><br>
+                <table>
+                    <tr><td><b>강아지똥</b></td><td> : </td><td>다가오는 몬스터를 처치하며 민들레를 지키는 게임</td></tr>
+                    <tr><td><b>별주부전</b></td><td> : </td><td>미로 속에서 토끼 간을 구하여 용왕을 살리는 게임</td></tr>
+                    <tr><td><b>은혜 갚은 까치</b></td><td> : </td><td>쫓아오는 구렁이를 피해 종을 울려 선비를 지키는 게임</td></tr>
+                </table>
+            </p>
+            <div class="gallery">
+                <img src="../../assets/folktale/MainMenu.png" alt="Main Menu">
+                <img src="../../assets/folktale/Main_mod.png" alt="Game Mode Selection">
+                <img src="../../assets/folktale/HumanSheet_right.png" alt="Character Design">
+                <p><small style="color: #888b8e;">메인 페이지 이미지 소스</small></p>
+            </div>
+        </article>
+        <hr class="divide">
+        <article class="tech">
+            <h2>사용 기술</h2>
+            <table>
+                <tr><td>&#128391;</td><td>C++</td></tr>
+                <tr><td>&#128391;</td><td>Visual Studio</td></tr>
+                <tr><td>&#128391;</td><td>SDL 라이브러리</td></tr>
+                <tr><td>&#128391;</td><td>GitHub</td></tr>
+            </table>
+            <div class="gallery-tech">
+                <img src="../../assets/logo/c++.png" alt="c++">
+                <img src="../../assets/logo/visual.png" alt="visual">
+                <img src="../../assets/logo/SDL.png" alt="sdl">
+                <img src="../../assets/logo/github.png" alt="git">
+            </div>
+        </article>
+        <hr class="divide">
+        <article class="part">
+            <h2>담당 파트</h2>
+            <p class="tag">은혜갚은 까치</p>
+        
+            <h4>플레이 규칙</h4>
+            <ul>
+                <li>사용자는 까치를 움직여 구렁이와 빨간 종을 피해 파란 종을 5번 울리면 <b>Game Clear</b>.</li>
+                <li>까치의 하트가 다 소진될 경우 <b>Game Over</b>.</li>
+                <li>빨간 종은 까치를 쫓아오거나 랜덤한 위치에 스폰되며 일정 시간 후 폭발.</li>
+                <li>구렁이는 1의 데미지를 주며, 빨간 종은 0.5의 데미지를 줌.</li>
+            </ul>
+        
+            <h4>핵심 구현 사항</h4>
+            <ol>
+                <li><b>ESC 일시정지 기능 구현</b>: 
+                    <ul>
+                        <li>플레이어가 게임을 중단하고 다시 재개할 수 있도록 ESC 키로 일시 정지 기능 추가.</li>
+                    </ul>
+                </li>
+                <li><b>플레이 시간에 따른 화면 색상 변화 구현</b>:
+                    <ul>
+                        <li>게임 진행 시간에 따라 화면 색상이 점진적으로 변화.</li>
+                        <li>일시 정지 시간이 포함되지 않아 실제 플레이 시간에 맞게 반영.</li>
+                    </ul>
+                </li>
+                <li><b>까치의 위치에 따른 구렁이 움직임 구현</b>:
+                    <ul>
+                        <li>구렁이가 까치의 현재 위치를 추적하여 전략적 요소를 추가.</li>
+                        <li>플레이어의 이동에 따라 난이도를 조절.</li>
+                    </ul>
+                </li>
+                <li><b>2초 전 까치의 위치에서 폭발하는 빨간 종 구현</b>:
+                    <ul>
+                        <li>빨간 종은 2초 전 까치의 위치에서 폭발하도록 설계.</li>
+                        <li>폭발 전 깜빡임 애니메이션과 폭발 중 데미지 활성화를 구현.</li>
+                    </ul>
+                </li>
+                <li><b>데미지 이후 3초간 무적 상태 활성화</b>: 
+                    <ul>
+                        <li>
+                            플레이어가 추가적인 피해를 즉시 받지 않도록 보호.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </article>
+        <hr class="divide">
+        <a href="https://github.com/OldCrop/old-crop" target="_blank" class="github-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle;"> 
+            <span>깃허브 바로가기</span>
+        </a>
+    </section>
+    
+
+    <footer>
+        <span>LGY010011</span>
+        <span>© 2024 Portfolio</span>
+    </footer>
+</body>
