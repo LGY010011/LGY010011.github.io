@@ -18,7 +18,7 @@ section.intro{
 }
 
 section>article{
-    width: 60%;
+    width: 75%;
 }
 
 /* Intro 비디오 스타일 */
@@ -39,7 +39,7 @@ article>h1{
 
 hr.divide{
     margin: 0;
-    width: 60%;
+    width: 75%;
 }
 
 /* 갤러리 스타일 */

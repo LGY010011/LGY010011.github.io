@@ -1,16 +1,28 @@
 html {
-    overflow-y: scroll; /* 항상 세로 스크롤바 표시 */
     scroll-behavior: smooth; /* 부드러운 스크롤 적용 */
+    height: 100%;
 }
+
 body {
     font-family: 'Arial', sans-serif; /* 글꼴 스타일 */
-    overflow-x: hidden; /* 가로 스크롤 방지 */
-    user-select: none; /* 텍스트 선택 방지 */
+    overflow-y: scroll; 
+    user-select: none; 
     caret-color: transparent; /* 커서 깜빡임 방지 */
+    width: 1200px; 
+    margin: 0 auto; /* 화면 중앙 정렬 */
+    background-color: white;
+    min-height: 100vh;
+    padding-top:50px;
+    padding-bottom: 20px;
 }
 
 
 .navbar {
+    width: 100%; /* 화면 너비를 꽉 채움 */
+    position: fixed;
+    top: 0; /* 화면 상단에 위치 */
+    left:0px;
+    z-index: 1000; /* 다른 요소보다 위에 표시 */
     background-color: #1a1b1ceb;
     border-radius: 5px;
 }

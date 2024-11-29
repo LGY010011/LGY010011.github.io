@@ -1,7 +1,7 @@
 aside.table {
     position: fixed; /* 화면의 특정 위치에 고정 */
     top: 30%; /* 네비게이션 바로부터 여백 */
-    left: 8%;
+    left: 100px;
     width:5%;
     height:auto;
     background-color: rgba(0, 0, 0, 0.05);
@@ -54,7 +54,7 @@ section{
 }
 
 article {
-    width: 60%;
+    width: 75%;
     margin-bottom: 30px; /* 각 article 간 여백 */
     max-height: 300px; /* 최대 높이 제한 */
     overflow-y: auto; /* 세로 스크롤 허용 */
