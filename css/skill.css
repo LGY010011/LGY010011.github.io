@@ -2,7 +2,7 @@ aside.table {
     position: fixed; /* 화면의 특정 위치에 고정 */
     top: 30%; /* 네비게이션 바로부터 여백 */
     left: 100px;
-    width:5%;
+    width:60px;
     height:auto;
     background-color: rgba(0, 0, 0, 0.05);
     padding: 15px;
