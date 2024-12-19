@@ -4,21 +4,21 @@
     <title>LEEGY</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skill.css">
 </head>
 <body>
     <!-- 네비게이션 바 -->
     <nav class="navbar">
         <ul>
             <li><a href="index.html" class="check">ABOUT</a></li>
-            <li><a href="pages/skill.html" >SKILL</a></li>
             <li><a href="pages/projects.html">PROJECT</a></li>
             <li><a href="pages/contact.html" >CONTACT</a></li>
         </ul>
     </nav>
 
     <!-- 메인 컨텐츠 -->
-    <section>
-        <article>
+    <section id="home">
+        <article id="about">
             <h2>ABOUT ME</h2>
             <div class="profile">
                 <div class="profile-container">
@@ -41,7 +41,7 @@
             </div>
         </article>
 
-        <article>
+        <article id="experience">
             <h2>EXPERIENCE</h2>
             <ul class="timeline">
                 <li>
@@ -84,7 +84,7 @@
             </ul>
         </article>
 
-        <article>
+        <article id="tips">
             <h2>MY LEARNING TIPS 😎</h2>
             <ul class="tips">
                 <li>코드 리뷰를 통해 얻은 피드백은 바로 정리하고 적용하기</li>
@@ -96,7 +96,45 @@
         
     </section>
 
-
+    <section id="skill">
+        <article class="card">
+            <strong>front</strong>
+            <div class="scrolling-content">
+                <span class="keyword">React</span>
+                <span class="keyword">style-component</span>
+                <span class="keyword">HTML</span>
+                <span class="keyword">CSS</span>
+                <span class="keyword">JS</span>
+            </div>
+        </article>
+        <article class="card">
+            <strong>back</strong>
+            <div class="scrolling-content">
+                <span class="keyword">SpringBoot</span>
+                <span class="keyword">JPA</span>
+                <span class="keyword">MySQL</span>
+                <span class="keyword">CI/CD</span>
+                <span class="keyword">AWS</span>
+            </div>
+        </article>
+        <article class="card">
+            <strong>tools</strong>
+            <div class="scrolling-content">
+                <span class="keyword">Visual Studio</span>
+                <span class="keyword">VS Code</span>
+                <span class="keyword">DataGrip</span>
+                <span class="keyword">Git</span>
+                <span class="keyword">IntelliJ</span>
+            </div>
+        </article>
+    </section>
+    
+    <section id="home">
+        <a href="https://github.com/LGY010011" target="_blank" class="github-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle;"> 
+            <span>깃허브 바로가기</span>
+        </a>
+    </section>
 
     <footer>
         <span>LGY010011</span>
