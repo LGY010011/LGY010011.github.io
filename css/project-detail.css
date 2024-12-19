@@ -25,6 +25,8 @@ section>article{
 article.intro video, article.intro>img {
     display: flex;
     justify-self: center;
+    height: auto;
+    object-fit: contain;
     max-height: 400px;
     max-width: 700px;
     border-radius: 10px;
@@ -114,46 +116,46 @@ hr.divide{
 
 /* 제목 스타일 */
 article.part h4 {
-    padding-bottom: 5px; /* 밑줄과의 간격 */
-    margin-bottom: 15px; /* 제목과 콘텐츠 간 간격 */
-    font-size: 1.2em; /* 적당한 크기 */
+    padding-bottom: 5px; 
+    margin-bottom: 15px; 
+    font-size: 1.2em; 
 }
 
 /* 태그 강조 */
 article.part .tag {
     display: inline-block;
-    background-color: #888b8e; /* 강조를 위한 파란색 배경 */
-    color: white; /* 흰색 텍스트 */
-    padding: 5px 10px; /* 내부 여백 */
-    border-radius: 11px; /* 태그 모양 둥글게 */
-    font-size: 0.9em; /* 태그 텍스트 크기 */
+    background-color: #888b8e; 
+    color: white;
+    padding: 5px 10px; 
+    border-radius: 11px;
+    font-size: 0.9em;
     margin-bottom: 15px; /* 태그와 내용 간격 */
 }
 
 /* 리스트 스타일 */
 article.part ul,
 article.part ol {
-    padding-left: 20px; /* 리스트 들여쓰기 */
-    margin: 10px 0; /* 리스트 간 여백 */
-    color: #000000; /* 리스트 텍스트 색상 */
+    padding-left: 20px;
+    margin: 10px 0; 
+    color: #000000; 
 }
 
 /* 리스트 항목 스타일 */
 article.part li {
-    margin-bottom: 10px; /* 항목 간격 */
-    line-height: 1.6; /* 읽기 쉬운 줄 간격 */
+    margin-bottom: 10px; 
+    line-height: 1.6; 
 }
 
 /* 강조 텍스트 */
 article.part b {
-    color: #af2932; /* 파란색 강조 */
+    color: #af2932;
 }
 
 /* 리스트 안의 추가 설명 스타일 */
 article.part ul ul,
 article.part ol ul {
-    margin-top: 5px; /* 리스트 안의 간격 */
-    font-size: 0.95em; /* 조금 더 작은 크기 */
+    margin-top: 5px; 
+    font-size: 0.95em; 
 }
 
 .github-link {

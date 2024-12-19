@@ -27,8 +27,7 @@ aside.table a {
 }
 
 aside.table a:hover {
-    color: #6d6b6b; /* 링크 hover 효과 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #a6b8a5; /* 링크 hover 효과 */
 }
 
 #myproject{

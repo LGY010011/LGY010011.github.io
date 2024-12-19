@@ -80,7 +80,7 @@ section>article{
 
 .timeline li:hover {
     transform: scale(1.03);
-    background-color:#f8f1dfaf;
+    background-color:#ebf2eb;
 }
 
 
@@ -121,7 +121,7 @@ section>article{
 
 li.check {
     
-    background-color: #f8f1dfaf; 
+    background-color: #ebf2eb; 
     font-weight: bold;
     color: #795548; 
 }

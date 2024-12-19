@@ -23,8 +23,13 @@ body {
     top: 0; /* 화면 상단에 위치 */
     left:0px;
     z-index: 1000; /* 다른 요소보다 위에 표시 */
-    background-color: #1a1b1ceb;
-    border-radius: 5px;
+    background-color: #3e5048;
+
+}
+
+.navbar a.check{
+    background-color: #ffffff;
+    color: #182721;
 }
 
 .navbar ul {
@@ -49,8 +54,8 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #ddd;
-    color: #000000;
+    background-color: #ffffff;
+    color: #182721;
 }
 
 .page {

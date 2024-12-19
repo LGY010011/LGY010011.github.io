@@ -1,59 +1,105 @@
-<!DOCTYPE html>
-<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEEGY</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
     <!-- 네비게이션 바 -->
     <nav class="navbar">
         <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="pages/about.html" >ABOUT</a></li>
-            <li><a href="pages/skill.html">SKILL</a></li>
+            <li><a href="index.html" class="check">ABOUT</a></li>
+            <li><a href="pages/skill.html" >SKILL</a></li>
             <li><a href="pages/projects.html">PROJECT</a></li>
-            <li><a href="pages/contact.html">CONTACT</a></li>
+            <li><a href="pages/contact.html" >CONTACT</a></li>
         </ul>
     </nav>
 
-    <!-- 페이지 콘텐츠 -->
-    <section id="content">
-        
-        <div id="home" class="page">
-            <!--이미지 article-->
-            <article class="profile-article">
-                <div class="imagefield">
-                    <img src="assets/profile.jpeg">
-                    
+    <!-- 메인 컨텐츠 -->
+    <section>
+        <article>
+            <h2>ABOUT ME</h2>
+            <div class="profile">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="assets/profile.jpeg" alt="프로필 사진" >
+                    </div>  
+                    <span class="impact">" 안녕하세요! 배움을 추구하는 사람입니다. "
+                    </span>
                 </div>
-                <!--줄글 article-->
-                <div class="textfield">
-                    <div>
-                        <table >
-                            <tr><td>&#128391;</td><td><strong>name</strong></td><td>이가영</td></tr>
-                            <tr><td>&#128391;</td><td><strong>school</strong></td><td>가톨릭대학교</td></tr>
-                            <tr><td>&#128391;</td><td><strong>1st major</strong></td><td>미디어기술콘텐츠학과</td></tr>
-                            <tr><td>&#128391;</td><td><strong>2nd major</strong></td><td>컴퓨터정보공학부</td></tr>
-                        </table>
-                    </div>
-                    <div>
-                        
-                    </div>
-                </div>
-            </article>
-            <hr>
-            <div class="gif">
-                <img src="assets/Rhombus.gif">
+                <p class="bio">
+                    안녕하세요! <b>나나/이가영</b>입니다.<br>
+                    풀스택 개발자를 목표로 꾸준히 성장하고 있습니다.<br><br>
+                    UMC 활동을 통해 프론트엔드와 백엔드 전반에 걸친 개발 경험을 쌓았으며, <br>
+                    GDGoC 활동에서는 AWS와 같은 클라우드 기술을 다루며 인프라 지식을 넓히고 있습니다. <br>
+                    프론트엔드로 참여하는 프로젝트와 협업 경험을 통해 사용자 중심의 개발을 고민하며 기술적 역량을 확장해 가고 싶습니다.<br><br>
+                    저는 끊임없는 학습과 새로운 도전에 가치를 두고 있으며, 지속적인 성장을 통해 더 나은 개발자로 나아가고자 합니다.
+                </p>
+                <img src="assets/about-me.png" 
+                    style="width: 100%; opacity: 90%; margin-top:100px; display: flex; justify-self: center; border-radius: 10px; ">
             </div>
-        </div>
+        </article>
+
+        <article>
+            <h2>EXPERIENCE</h2>
+            <ul class="timeline">
+                <li>
+                    <strong style="color:lightgray">2025년 - </strong><br>
+                </li>
+                <li>
+                    <strong>2024년 - UMC 7th Web 챌린저</strong><br>
+                    프론트엔드 학습 및 프로젝트 매칭 단계
+                </li>
+               
+                <li>
+                    <strong>2024년 - GDGoC 3th 멤버</strong><br>
+                    AWS 인프라 스터디 진행
+                </li>
+            
+                <a href="projects/dongle.html">
+                    <li>
+                        <strong>2024년 - GGUM 해커톤</strong><br>
+                        백엔드 개발자로 참여하여 앱 서비스 "동글동글" 수상
+                    
+                    </li>
+                </a>
+                <a href="projects/folktale.html">
+                    <li>
+                        <strong>2024년 - 디지털 이노베이션 행사</strong><br>
+                        게임 프로젝트 "설화: Folktale"로 2위 수상
+                    </li>
+                </a>
+                <a href="projects/block.html">
+                    <li>
+                        <strong>2024년 - UMC 6th Server (SpringBoot) 챌린저</strong><br>
+                        백엔드 학습 및 프로젝트 "Block" 진행
+                    </li>
+                </a>
+                <li>
+                    <strong>2023년 - C언어&Python학회 ICON 학술위원장</strong><br>
+                    학술제 기획 및 멘토 활동
+                </li>
+              
+            </ul>
+        </article>
+
+        <article>
+            <h2>MY LEARNING TIPS 😎</h2>
+            <ul class="tips">
+                <li>코드 리뷰를 통해 얻은 피드백은 바로 정리하고 적용하기</li>
+                <li>새로 배운 기술을 익힐 때는 일부러 오류 발생시키기</li>
+                <li>오류를 만났을 때, 문제를 작은 단위로 쪼개서 해결하는 습관</li>
+                <li class="check">예상 범위 내의 오류를 만났을 때는 기뻐하기 😖</li>
+            </ul>
+        </article>
+        
     </section>
+
+
+
     <footer>
         <span>LGY010011</span>
         <span>© 2024 Portfolio</span>
     </footer>
-    
 </body>
-</html>
