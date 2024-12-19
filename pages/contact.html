@@ -10,11 +10,10 @@
     <!-- 네비게이션 바 -->
     <nav class="navbar">
         <ul>
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="about.html" >ABOUT</a></li>
+            <li><a href="../index.html">ABOUT</a></li>
             <li><a href="skill.html" >SKILL</a></li>
             <li><a href="projects.html" >PROJECT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="contact.html" class="check">CONTACT</a></li>
         </ul>
     </nav>
 
@@ -22,48 +21,63 @@
     <section>
         
         <h1 style="font-size: 2em; margin-bottom: 0px;">Contact Me</h1>
-        저에게 연락하고 싶으시면 아래 양식을 사용하거나 아래의 방법으로 연락하실 수 있습니다
-        <article class="contact-me">
-            <h3>메시지 남기기</h3>
-            <form class="contact-form">
-                <label for="name">이름:</label>
-                <input type="text" id="name" name="name" required>
+        아래의 방법들로 연락하실 수 있습니다 😊
 
-                <label for="email">이메일:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">메시지:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">보내기</button>
-            </form>
-
-            
-        </article>
         <article class="contact-info">
             <h3>연락처 정보</h3>
             <table class="lists">
-                <tr><td><b>Email</b></td><td>:</td><td>gylm1111pm@email.com</td></tr>
-                <tr><td><b>Phone</b></td><td>:</td><td>000-1111-2222</td></tr>
+                <tr><td><b>email</b></td><td>:</td><td>gylm1111pm@gmail.com</td></tr>
+                <tr><td><b>phone</b></td><td>:</td><td>010-4105-6086</td></tr>
             </table>
         </article>
-        
-        <!-- 소셜 미디어 링크 -->
-        <article class="social-media">
-            <h3>Follow Me</h3>
-            <div class="follow">
-                <a href="https://velog.io/@lgy010011/posts" target="_blank"><span>Velog</span></a>
-                <a href="https://github.com/LGY010011" target="_blank"><span>GitHub</span></a>
+
+
+        <article class="contact-me">
+            <h3>메시지 남기기</h3>
+            <form id="contactForm"class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLScHJ1i6LrH6pTzk41mCUqZ6D3vHSYNaH7F9v9t6i9MEXTmdDw/formResponse" method="POST" target="_blank">
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="entry.1446702267" required>
+
+                <label for="email">이메일:</label>
+                <input type="email" id="email" name="entry.1970835451" required>
+
+                <label for="message">메시지:</label>
+                <textarea id="message" name="entry.1031326537" rows="5" required></textarea>
+
+                <button type="submit">보내기</button>
+            </form>
+            <div id="successMessage" style="display: none; color: green; margin-top: 10px;">
+                메시지가 성공적으로 전송되었습니다! 감사합니다. 😊
             </div>
         </article>
 
-        <!-- 위치 (선택 사항) -->
-        <article class="location">
-            <h3>Location</h3>
-            <p>서울특별시, 대한민국</p>
-            <!-- 구글 지도 링크 -->
-            <a href="https://www.google.com/maps" target="_blank">구글 지도에서 보기</a>
-        </article>
+        <!-- JavaScript -->
+        <script>
+            document.getElementById("contactForm").addEventListener("submit", function (e) {
+                e.preventDefault(); // 기본 제출 동작 방지
+
+                const form = e.target;
+                const formData = new FormData(form);
+
+                // 구글 폼에 데이터 전송
+                fetch(form.action, {
+                    method: "POST",
+                    body: formData,
+                    mode: "no-cors", // CORS 오류 방지
+                })
+                    .then(() => {
+                        // 성공 메시지 표시
+                        document.getElementById("successMessage").style.display = "block";
+
+                        // 폼 리셋
+                        form.reset();
+                    })
+                    .catch((error) => {
+                        console.error("폼 제출 중 오류 발생:", error);
+                        alert("오류가 발생했습니다. 다시 시도해주세요.");
+                    });
+            });
+        </script>
 
     </section>
 
