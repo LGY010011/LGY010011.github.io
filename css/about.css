@@ -42,6 +42,13 @@ section#home>article{
     margin-top:40px;
 }
 
+.year{
+    list-style-type:disc;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+}
 
 .impact{
     width: 70%;
