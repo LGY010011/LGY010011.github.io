@@ -87,7 +87,8 @@ section#home>article{
 
 .timeline li:hover {
     transform: scale(1.03);
-    background-color:#ebf2eb;
+    /* background-color:#ebf2eb; */
+    background-color: white;
 }
 
 

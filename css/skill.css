@@ -14,7 +14,7 @@ section#skill {
     width: 500px;
     height: 150px;
     border-radius: 10px;
-    border: 1px solid #a6b8a5;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -38,8 +38,9 @@ section#skill {
 
 /* 키워드 스타일 */
 .keyword {
-    background-color: #8fa28e;
-    color: #ffffff;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #000000;
     border-radius: 5px;
     font-size: 16px;
     padding: 8px 16px; /* 패딩 추가 */
